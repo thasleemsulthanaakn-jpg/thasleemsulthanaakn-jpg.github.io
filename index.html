@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Thas | Fashion & AI Creative</title>
+<title>Thas | Luxury Fashion & AI Strategy</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 html {
@@ -15,8 +15,8 @@ html {
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #0d0d0d;
-    color: #ffffff;
+    background: linear-gradient(135deg, #1a1026, #2b1d3a);
+    color: #f4ecff;
 }
 
 header {
@@ -26,75 +26,86 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: radial-gradient(circle at top, #1a1a1a, #0d0d0d 70%);
+    background: radial-gradient(circle at top, #3a2554, #1a1026 70%);
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin: 0;
+    letter-spacing: 2px;
 }
 
 .tagline {
-    margin-top: 15px;
+    margin-top: 20px;
     font-weight: 300;
-    color: #bbbbbb;
+    color: #d8c8f5;
     letter-spacing: 1px;
 }
 
 .cta {
-    margin-top: 30px;
-    padding: 12px 28px;
-    border: 1px solid #ffffff;
+    margin-top: 40px;
+    padding: 14px 32px;
+    border: 1px solid #e0c3ff;
     border-radius: 30px;
     text-decoration: none;
-    color: #ffffff;
+    color: #e0c3ff;
     transition: 0.3s ease;
 }
 
 .cta:hover {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #e0c3ff;
+    color: #1a1026;
 }
 
 section {
-    padding: 100px 20px;
-    max-width: 1000px;
-    margin: auto;
+    padding: 100px 8%;
 }
 
 .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 40px;
+    border-left: 4px solid #c6a0ff;
+    padding-left: 15px;
 }
 
-.project {
-    padding: 25px;
-    margin-bottom: 30px;
-    border: 1px solid #222;
-    border-radius: 15px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
     transition: 0.3s ease;
-    background: #111;
 }
 
-.project:hover {
+.card:hover {
     transform: translateY(-8px);
-    border-color: #ffffff;
-    box-shadow: 0 10px 40px rgba(255,255,255,0.08);
+    box-shadow: 0 15px 40px rgba(198, 160, 255, 0.3);
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-weight: 500;
 }
 
 footer {
     text-align: center;
     padding: 60px 20px;
     font-size: 0.9rem;
-    color: #777;
-    border-top: 1px solid #1a1a1a;
+    color: #bca7d9;
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
 </style>
 </head>
@@ -103,47 +114,71 @@ footer {
 
 <header>
     <h1>Thas</h1>
-    <p class="tagline">Fashion × Luxury Strategy × AI Innovation</p>
-    <a href="#projects" class="cta">View My Work</a>
+    <p class="tagline">Luxury Fashion Marketing × AI Creative Strategy</p>
+    <a href="#work" class="cta">Explore My Work</a>
 </header>
 
 <section>
-    <h2 class="section-title">About</h2>
+    <h2 class="section-title">About Me</h2>
     <p>
-        I merge fashion aesthetics with intelligent systems. My work explores luxury branding, 
-        cultural storytelling, and AI-driven creative strategy. I design experiences that feel 
-        editorial yet future-facing.
+        I operate at the intersection of fashion, luxury branding, and intelligent systems.
+        With a background in digital marketing and AI automation environments,
+        I transform creative concepts into strategic, future-ready fashion narratives.
+        My work blends sketching, digital artistry, and brand architecture.
     </p>
 </section>
 
-<section id="projects">
-    <h2 class="section-title">Selected Work</h2>
+<section id="work">
+    <h2 class="section-title">Fashion & Creative Work</h2>
 
-    <div class="project">
-        <h3>DEN-Z: 404 I AM FASHION</h3>
-        <p>A conceptual denim universe redefining identity through digital rebellion and couture storytelling.</p>
-    </div>
+    <div class="grid">
 
-    <div class="project">
-        <h3>Luxury Brand Strategy Concepts</h3>
-        <p>Forward-thinking campaigns crafted for modern global consumers.</p>
-    </div>
+        <div class="card">
+            <img src="images/sketch1.jpg" alt="Fashion Sketch">
+            <h3>Concept Sketch Series</h3>
+            <p>Hand-drawn silhouettes reimagined through digital refinement.</p>
+        </div>
 
-    <div class="project">
-        <h3>AI Styling Prototype</h3>
-        <p>Developing intelligent styling systems that personalize fashion discovery.</p>
+        <div class="card">
+            <img src="images/denz.jpg" alt="DEN-Z Collection">
+            <h3>DEN-Z: 404 I AM FASHION</h3>
+            <p>A conceptual denim universe exploring rebellion and identity.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/ai-style.jpg" alt="AI Styling Concept">
+            <h3>AI Styling Prototype</h3>
+            <p>Developing intelligent styling systems that personalize fashion discovery.</p>
+        </div>
+
     </div>
 </section>
 
 <section>
-    <h2 class="section-title">Contact</h2>
-    <p>
-        LinkedIn | Instagram | Email
-    </p>
+    <h2 class="section-title">Strategy & Marketing</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Luxury Brand Strategy Concepts</h3>
+            <p>High-level positioning and narrative frameworks for premium brands.</p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Marketing Experience</h3>
+            <p>Content architecture, audience growth, and engagement optimization.</p>
+        </div>
+
+        <div class="card">
+            <h3>AI Automation Exposure</h3>
+            <p>Working within AI-driven operational systems and workflow automation environments.</p>
+        </div>
+
+    </div>
 </section>
 
 <footer>
-    © 2026 Thas — Built with vision.
+    © 2026 Thas — Crafted in Violet Vision.
 </footer>
 
 </body>
