@@ -8,57 +8,82 @@
 body {
     margin:0;
     font-family: 'Georgia', serif;
-    background: linear-gradient(135deg, #1e1333, #2a1847);
-    color:#f5ecff;
+    background: radial-gradient(circle at top left, #3b1f63, #1b0f2e 60%);
+    color:#f3e9ff;
+    overflow-x:hidden;
 }
 
 header {
     text-align:center;
-    padding:100px 20px;
+    padding:140px 20px;
+    position:relative;
 }
 
 header h1 {
-    font-size:42px;
-    letter-spacing:2px;
+    font-size:64px;
+    letter-spacing:4px;
+    background: linear-gradient(90deg,#e6d4ff,#b993ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header p {
-    font-size:18px;
-    max-width:700px;
-    margin:20px auto;
-    color:#d6c4f5;
+    font-size:20px;
+    max-width:800px;
+    margin:30px auto;
+    color:#d9c7ff;
+    line-height:1.6;
 }
 
 .section {
-    padding:80px 10%;
+    padding:100px 10%;
+    position:relative;
+}
+
+.section::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:1px;
+    background: linear-gradient(to right, transparent, #a87fff, transparent);
 }
 
 .section h2 {
-    font-size:28px;
-    margin-bottom:30px;
-    border-bottom:1px solid #6d4ca3;
-    padding-bottom:10px;
+    font-size:32px;
+    margin-bottom:40px;
+    letter-spacing:2px;
+    color:#caa6ff;
 }
 
 .card {
-    background: rgba(255,255,255,0.05);
-    padding:30px;
-    border-radius:20px;
-    margin-bottom:30px;
-    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.04);
+    padding:40px;
+    border-radius:25px;
+    margin-bottom:40px;
+    backdrop-filter: blur(12px);
+    border:1px solid rgba(255,255,255,0.08);
+    transition:0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(170,130,255,0.3);
 }
 
 .project-title {
-    font-size:20px;
-    color:#caa6ff;
-    margin-bottom:10px;
+    font-size:22px;
+    color:#e2ccff;
+    margin-bottom:15px;
 }
 
 footer {
     text-align:center;
-    padding:40px;
+    padding:60px;
     font-size:14px;
-    color:#a88bd6;
+    color:#bca7e6;
+    border-top:1px solid rgba(255,255,255,0.1);
 }
 </style>
 </head>
